@@ -1,0 +1,747 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "config.coffee",
+			"settings":
+			{
+				"buffer_size": 2942,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "node_modules/brunch/lib/fs_utils/common.js",
+			"settings":
+			{
+				"buffer_size": 2552,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/docs/test.jade",
+			"settings":
+			{
+				"buffer_size": 343,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 117.0,
+		"selected_items":
+		[
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"local",
+				"Local History: Incremental Diff"
+			],
+			[
+				"loca",
+				"Local History: Browse"
+			],
+			[
+				"save",
+				"Project: Save As"
+			],
+			[
+				"add",
+				"Project: Add Folder"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"ss coff",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"sshtml",
+				"Set Syntax: HTML"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 386.0,
+		"history":
+		[
+			"coffee_compile",
+			"cake",
+			"coff",
+			"sys.version",
+			"import sys"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/usr/share/applications/defaults.list",
+		"/home/gook/Desktop/pyGameWiki/inside-public/node_modules/brunch/lib/fs_utils/asset.js",
+		"/home/gook/Desktop/pyGameWiki/inside-public/node_modules/brunch/lib/fs_utils/index.js",
+		"/home/gook/Desktop/pyGameWiki/inside-public/node_modules/brunch/lib/cli.js",
+		"/home/gook/Desktop/pyGameWiki/inside-public/node_modules/brunch/lib/index.js",
+		"/home/gook/Desktop/pyGameWiki/inside-public/node_modules/brunch/package.json",
+		"/home/gook/Desktop/pyGameWiki/inside-public/node_modules/brunch/setup.js",
+		"/home/gook/Desktop/pyGameWiki/inside-public/node_modules/brunch/vendor/require_definition.js",
+		"/home/gook/Desktop/pyGameWiki/inside-public/node_modules/brunch/bin/brunchcoffee",
+		"/home/gook/Desktop/delme/brunch-sourcemap-test/package.json",
+		"/home/gook/Desktop/pyGameWiki/inside-public/app/public/login.jade",
+		"/home/gook/Desktop/delme/sublimetext_indentxml/indentxml.py",
+		"/home/gook/Desktop/pyGameWiki/inside-public/node_modules/static-jade-brunch/src/index.coffee",
+		"/home/gook/Desktop/pyGameWiki/inside-public/node_modules/static-jade-brunch/lib/index.js",
+		"/home/gook/Desktop/pyGameWiki/inside-public/app/docs/test.jade",
+		"/home/gook/Desktop/pyGameWiki/inside-public/public/index.html",
+		"/home/gook/Desktop/pyGameWiki/inside-public/npm-debug.log",
+		"/home/gook/Desktop/pyGameWiki/inside-public/app/assets/_login.jade",
+		"/home/gook/Desktop/pyGameWiki/inside-public/config.coffee",
+		"/home/gook/Desktop/pyGameWiki/inside-public/app/views/wiki/list.coffee",
+		"/home/gook/Desktop/pyGameWiki/inside-public/app/views/templates/wikiList.jade",
+		"/home/gook/Desktop/pyGameWiki/inside-public/node_modules/jade-brunch/src/index.coffee",
+		"/home/gook/Desktop/pyGameWiki/inside-public/app/models/WikiItem.coffee",
+		"/home/gook/Desktop/pyGameWiki/inside-public/app/assets/login.jade",
+		"/home/gook/Desktop/pyGameWiki/inside-public/public/login.jade",
+		"/home/gook/Desktop/pyGameWiki/inside-public/package.json",
+		"/home/gook/Desktop/pyGameWiki/inside-public/public/javascripts/templates.js",
+		"/home/gook/Desktop/pyGameWiki/inside-public/app/routers/main.coffee",
+		"/home/gook/Desktop/pyGameWiki/inside-public/app/initialize.coffee",
+		"/home/gook/Desktop/pyGameWiki/inside-public/app/assets/index.html",
+		"/home/gook/Desktop/pyGameWiki/inside-public/app/views/templates/layout.jade",
+		"/home/gook/Desktop/pyGameWiki/inside-public/app/models/WikiList.coffee",
+		"/home/gook/Desktop/pyGameWiki/inside-public/app/views/view.coffee",
+		"/home/gook/Desktop/pyGameWiki/inside-public/app/views/wiki/item.coffee",
+		"/home/gook/.config/sublime-text-3/Packages/Alignment/Alignment.py",
+		"/home/gook/.config/sublime-text-3/Packages/User/CoffeeScript.sublime-settings",
+		"/home/gook/.cache/.fr-S0IaRz/Alignment.py",
+		"/home/gook/.config/sublime-text-3/Packages/User/JSON.sublime-settings",
+		"/home/gook/.config/sublime-text-3/Packages/Alignment/Default (Linux).sublime-keymap",
+		"/home/gook/.cache/.fr-TtKcKi/Alignment.py",
+		"/home/gook/.config/sublime-text-3/Packages/Alignment/Base File.sublime-settings",
+		"/home/gook/Desktop/pyGameWiki/inside-public/app/views/index.coffee",
+		"/home/gook/Desktop/pyGameWiki/inside-public/app/views/home_view.coffee",
+		"/home/gook/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/gook/Desktop/pyGameWiki/inside-public/inside-public.sublime-project",
+		"/home/gook/holdem_betspots@one_artboard.1.svg",
+		"/home/gook/holdem_betspots@one_artboard.svg",
+		"/home/gook/Desktop/test.html",
+		"/home/gook/.sublime/history/home/gook/Desktop/pyGameWiki/inside-public/app/views/wiki/2013-05-14_13.26.22.list.coffee",
+		"/home/gook/Desktop/pyGameWiki/inside-public/app/assets/font/fontawesome-webfont.woff",
+		"/home/gook/Downloads/holdem_betspots_all_languages_one_artboard.svg",
+		"/home/gook/Desktop/pyGameWiki/inside-public/README.md",
+		"/home/gook/.config/sublime-text-3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/home/gook/Desktop/pyGameWiki/inside-public/app/styles/layout.styl",
+		"/home/gook/Desktop/pyGameWiki/inside-public/vendor/styles/bootstrap/variables.less",
+		"/home/gook/Desktop/pyGameWiki/inside-public/app/assets/login.html",
+		"/home/gook/Desktop/pyGameWiki/inside-public/app/assets/views/templates/layout.html",
+		"/home/gook/.config/sublime-text-3/Packages/SublimeLinter/sublimelinter/modules/coffeescript.py",
+		"/home/gook/.config/sublime-text-3/Packages/SublimeLinter/sublimelinter/modules/base_linter.py",
+		"/home/gook/.config/sublime-text-3/Packages/User/SublimeLinter.sublime-settings",
+		"/home/gook/.config/sublime-text-3/Packages/SublimeLinter/SublimeLinter.py",
+		"/home/gook/.config/sublime-text-3/Packages/SublimeLinter/README.md",
+		"/home/gook/Desktop/pyGameWiki/inside-public/vendor/scripts/console-helper.js",
+		"/home/gook/.cache/.fr-d1c9mv/CoffeeLint.py",
+		"/home/gook/.config/sublime-text-3/Packages/User/Python.sublime-settings",
+		"/home/gook/.config/sublime-text-3/Packages/SublimeLinter/Default (Linux).sublime-keymap",
+		"/home/gook/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/gook/.cache/.fr-zCSQQR/CoffeeLint.py",
+		"/home/gook/.cache/.fr-YSSZRR/Default (Linux).sublime-keymap",
+		"/home/gook/.cache/.fr-vovmsf/Default.sublime-commands",
+		"/home/gook/Desktop/pyGameWiki/inside-public/public/javascripts/vendor.js",
+		"/home/gook/Desktop/pyGameWiki/inside-public/public/javascripts/app.js",
+		"/home/gook/Desktop/pyGameWiki/index.py",
+		"/home/gook/Desktop/pyGameWiki/bottle.py",
+		"/home/gook/Desktop/pyGameWiki/inside-public/public/stylesheets/app.css",
+		"/run/user/gook/gvfs/sftp:host=z0.lv,user=web/home/web/public_html/dev.game.z0.lv/templates/base.twig",
+		"/run/user/gook/gvfs/sftp:host=z0.lv,user=web/home/web/public_html/dev.game.z0.lv/templates/wikiItem.mustache",
+		"/home/gook/Desktop/pyGameWiki/inside-public/delme/package.json",
+		"/home/gook/Desktop/pyGameWiki/inside-public/delme/.gitignore",
+		"/home/gook/Desktop/pyGameWiki/brunch_test/clean-brunch/app/views/home_view.coffee",
+		"/home/gook/Desktop/pyGameWiki/brunch_test/clean-brunch/app/initialize.coffee",
+		"/home/gook/Desktop/pyGameWiki/brunch_test/clean-brunch/app/views/home_view.js",
+		"/home/gook/.cache/.fr-fekKWY/package-metadata.json",
+		"/home/gook/.config/sublime-text-3/Packages/CoffeeCompile/Keymaps/Default (Linux).sublime-keymap",
+		"/home/gook/.config/sublime-text-3/Packages/User/CoffeeCompile.sublime-settings",
+		"/home/gook/.cache/.fr-puWwJc/Menus/Main.sublime-menu",
+		"/home/gook/.cache/.fr-UJCsl7/Menus/Context.sublime-menu",
+		"/home/gook/.config/sublime-text-3/Packages/Package Control/Main.sublime-menu",
+		"/home/gook/.cache/.fr-rNfxrK/coffee_utils.py",
+		"/home/gook/.config/sublime-text-3/Packages/CoffeeComplete Plus (Autocompletion)/Default (Linux).sublime-keymap",
+		"/home/gook/.cache/.fr-lPdpMo/indentxml.py",
+		"/home/gook/.config/sublime-text-3/Installed Packages/PyV8/linux64-p3/config.json",
+		"/home/gook/.cache/.fr-1u266Z/indentxml.py",
+		"/home/gook/.cache/.fr-TOlcrl/indentxml.py",
+		"/home/gook/.cache/.fr-bkr9J6/indentxml.py",
+		"/home/gook/.cache/.fr-Ua6tvF/indentxml.py",
+		"/home/gook/.cache/.fr-QwxvvC/indentxml.py",
+		"/home/gook/.cache/.fr-q8h1Ru/indentxml.py",
+		"/home/gook/.cache/.fr-Gvx9VW/indentxml.py",
+		"/home/gook/Desktop/pyGameWiki/brunch_test/clean-brunchj/app/views/view.coffee",
+		"/home/gook/Desktop/pyGameWiki/brunch_test/clean-brunchj/app/views/home_view.coffee",
+		"/home/gook/Desktop/pyGameWiki/brunch_test/clean-brunchj/app/views/home_view.js",
+		"/home/gook/Desktop/pyGameWiki/brunch_test/clean-brunch/app/assets/index.html",
+		"/home/gook/Desktop/pyGameWiki/brunch_test/clean-brunch/app/views/index.coffee",
+		"/home/gook/Desktop/pyGameWiki/brunch_test/clean-brunch/app/views/view.coffee",
+		"/home/gook/Desktop/pyGameWiki/brunch_test/clean-brunch/app/views/view.js",
+		"/home/gook/Desktop/pyGameWiki/brunch_test/clean-brunch/app/routers/main.coffee",
+		"/home/gook/Desktop/pyGameWiki/brunch_test/clean-brunch/app/lib/router.js",
+		"/home/gook/Desktop/pyGameWiki/brunch_test/clean-brunch/app/lib/view_helper.js",
+		"/home/gook/Desktop/pyGameWiki/brunch_test/clean-brunch/app/application.js",
+		"/home/gook/Desktop/pyGameWiki/brunch_test/clean-brunch/package.json",
+		"/home/gook/Desktop/pyGameWiki/brunch_test/delme/config.coffee",
+		"/home/gook/Desktop/pyGameWiki/brunch_test/clean-brunch/cake/tasks.coffee",
+		"/home/gook/Desktop/pyGameWiki/brunch_test/clean-brunch/config.coffee",
+		"/home/gook/.cache/.fr-Ml8pva/chapless-brunch-master/package.json",
+		"/home/gook/Desktop/pyGameWiki/brunch_test/clean-brunch/README.md",
+		"/home/gook/Desktop/pyGameWiki/brunch_test/clean-brunch/vendor/scripts/console-helper.js",
+		"/home/gook/Desktop/pyGameWiki/brunch_test/clean-brunch/configs/web/development.coffee",
+		"/home/gook/Desktop/pyGameWiki/brunch_test/clean-brunch/cake/tasks/build.coffee",
+		"/home/gook/Desktop/pyGameWiki/brunch_test/clean-brunch/configs/build-environment.coffee",
+		"/home/gook/Desktop/pyGameWiki/brunch_test/clean-brunch/configs/build-mode.coffee",
+		"/home/gook/Desktop/pyGameWiki/brunch_test/clean-brunch/cake/tasks/help.coffee",
+		"/home/gook/Desktop/pyGameWiki/brunch_test/delme/cake/tasks.coffee",
+		"/home/gook/Desktop/pyGameWiki/brunch_test/delme/cake/tasks/build.coffee",
+		"/home/gook/.cache/.fr-1VWIS7/brunch-banana-pancakes-master/config.coffee",
+		"/home/gook/Desktop/pyGameWiki/brunch_test/clean-brunch/app/initialize.js",
+		"/home/gook/.cache/.fr-4cePSq/chapless-brunch-master/app/views/index/view.coffee",
+		"/home/gook/.cache/.fr-O3khkA/brunch-banana-pancakes-master/config.coffee"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"gedit",
+			"decode",
+			"asset",
+			"relAssetPath",
+			"getHtmlFilePath",
+			"compileDebug",
+			"font",
+			"navbarCollapseWidth",
+			"<<",
+			"coff",
+			"show_output_panel",
+			"begin_edit",
+			"=\"",
+			"\n'",
+			"/home/gook/Desktop/pyGameWiki/inside-public/",
+			"except",
+			"print",
+			"group",
+			"#",
+			")\n",
+			"select"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\n            ",
+			"\n    ",
+			"'"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "config.coffee",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2942,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2942,
+								2942
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 918.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "node_modules/brunch/lib/fs_utils/common.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2552,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								745,
+								745
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 839.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/docs/test.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 343,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.CoffeeLintPanel":
+	{
+		"height": 0.0
+	},
+	"output.coffeecompile_output":
+	{
+		"height": 576.0
+	},
+	"output.exec":
+	{
+		"height": 355.0
+	},
+	"project": "inside-public.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 249.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,50 @@
+!!! 5
+//- <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+//- <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+//- <!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+//- <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+    title Clean Brunch Pancakes
+    link(rel="stylesheet", href="/stylesheets/vendor.css")
+    link(rel="stylesheet", href="/stylesheets/app.css")
+    //-     Fav and touch icons
+    //-     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    //-     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    //-     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    //-     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    //-     <link rel="shortcut icon" href="favicon.ico">
+
+
+    //if lt IE 9
+      script(src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+    script(src="/javascripts/vendor.js", defer)
+    script(src="/javascripts/templates.js", defer)
+    script(src="/javascripts/app.js", defer, onload="require('initialize');")
+  body
+    div.container-fluid(style="padding: 0")
+      div.row-fluid.no-space
+        i(class="icon-microphone", style="height: 100px;width:100px;display:block")
+        div.sidebar.span3.hidden-phone
+          ul.nav.nav-list.nav-side
+            li: a(href="#overview")
+                i.icon-chevron-right
+                | Overview
+            li: a(href="#overview")
+                i.icon-chevron-right
+                | Transitions
+            li: a(href="#overview")
+                i.icon-chevron-right
+                | Tab
+            li: a(href="#overview")
+                i.icon-chevron-right
+                | Popover
+            li: a(href="#overview")
+                i.icon-chevron-right
+                | Button
+        div.span9.content(style="float:right")
+          //Body content

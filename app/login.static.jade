@@ -1,0 +1,25 @@
+doctype 5
+html(lang="en")
+  head
+    title LoginPage
+    link(rel="stylesheet", href="/stylesheets/login.css")
+    script(src="/javascripts/vendor.js", defer)
+    script
+      setTimeout(function(){
+          $("#login").addClass("accept");
+      },1000);
+
+  body
+    form#login(method="post", action="")
+      input(type="text", placeholder="username")
+      input(type="password", placeholder="password")
+      button( type="submit") &#9658;
+      p
+        | forgot your password?
+        a(href="#") click here
+
+
+    //- <input type="text" placeholder="username">
+    //- <input type="password"  placeholder="password">
+    //- <button type="submit">&#9658;</button>
+    //- forgot your password? <a href="#">click here</a>
