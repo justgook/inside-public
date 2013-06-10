@@ -1,3 +1,4 @@
+
 tasks = require './cake/tasks'
 
 generateTasks = (taskObject) ->

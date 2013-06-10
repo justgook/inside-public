@@ -6,8 +6,12 @@ html(lang="en")
     script(src="/javascripts/vendor.js", defer)
     script
       setTimeout(function(){
-          $("#login").addClass("accept");
-      },1000);
+          $("#login").on("submit",
+            function () {
+              this.classList.add("accept");
+              return false;
+              });
+      }, 100);
 
   body
     form#login(method="post", action="")

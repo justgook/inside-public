@@ -15,42 +15,106 @@ exports.config =
 			# * map of ('outputFilePath': function that takes input path)
 			joinTo:
 				'javascripts/app.js': /^app/
-				'javascripts/vendor.js': /^vendor/
+				# 'javascripts/vendor.js': /^vendor/
+				'javascripts/vendor.js': ///
+				#add all scripts that located in /vendor/scripts directory (and ignore subdirs)
+				^vendor[\/\\]scripts[\/\\][^\/^\\]+$
+				#add backbone Plugins
+				|^vendor[\/\\]scripts[\/\\]backbone[\/\\](
+							# (?!styles[\/\\]login\.styl)
+							backbone.subroute
+							| backbone.stickit
+							# | backbone-mediator
+						)\.js
+				# 'js/vendor.js':  # vendor lib jquery customBuild
+				|^vendor[\/\\]scripts[\/\\]jquery[\/\\](
+							# (?!styles[\/\\]login\.styl)
+							  ajax
+							| ajax/jsonp.js
+							| ajax/script.js
+							| ajax/xhr.js
+							| attributes
+							| callbacks
+							| core
+							| css
+							| data
+							| deferred
+							| deprecated
+							| dimensions
+							| effects
+							| event
+							| event-alias
+							| exports
+							| intro
+							| manipulation
+							| offset
+							| outro
+							| queue
+							| selector-native
+							| serialize
+							# | sizzle-jquery
+							| support
+							| traversing
+							| wrap
+							# { flag: "wrap", src: "src/wrap.js" },
+							# { flag: "css", src: "src/css.js" },
+							# { flag: "ajax", src: "src/ajax.js" },
+							# { flag: "ajax/script", src: "src/ajax/script.js", needs: ["ajax"]  },
+							# { flag: "ajax/jsonp", src: "src/ajax/jsonp.js", needs: [ "ajax", "ajax/script" ]  },
+							# { flag: "ajax/xhr", src: "src/ajax/xhr.js", needs: ["ajax"]  },
+							# { flag: "effects", src: "src/effects.js", needs: ["css"] },
+							# { flag: "offset", src: "src/offset.js", needs: ["css"] },
+							# { flag: "dimensions", src: "src/dimensions.js", needs: ["css"] },
+							# { flag: "deprecated", src: "src/deprecated.js" },
+						)\.js$
+					///
 			# Defines compilation order.
 			# `vendor` files will be compiled before other ones
 			# even if they are not present here.
 			order:
 				before: [
+					#jQuery
+					"vendor/scripts/jquery/intro.js",
+					"vendor/scripts/jquery/core.js",
+					# "src/selector-sizzle.js",
+					"vendor/scripts/jquery/selector-native.js",
+					"vendor/scripts/jquery/callbacks.js",
+					"vendor/scripts/jquery/deferred.js",
+					"vendor/scripts/jquery/support.js",
+					"vendor/scripts/jquery/data.js",
+					"vendor/scripts/jquery/queue.js",
+					"vendor/scripts/jquery/attributes.js",
+					"vendor/scripts/jquery/event.js",
+					"vendor/scripts/jquery/traversing.js",
+					"vendor/scripts/jquery/manipulation.js",
+					"vendor/scripts/jquery/wrap.js",
+					"vendor/scripts/jquery/css.js",
+					"vendor/scripts/jquery/serialize.js",
+					"vendor/scripts/jquery/event-alias.js",
+					"vendor/scripts/jquery/ajax.js",
+					"vendor/scripts/jquery/ajax/script.js",
+					"vendor/scripts/jquery/ajax/jsonp.js",
+					"vendor/scripts/jquery/ajax/xhr.js",
+					"vendor/scripts/jquery/effects.js",
+					"vendor/scripts/jquery/offset.js",
+					"vendor/scripts/jquery/dimensions.js",
+					"vendor/scripts/jquery/deprecated.js",
+					"vendor/scripts/jquery/exports.js",
+					"vendor/scripts/jquery/outro.js",
+					#Others
 					'vendor/scripts/console-helper.js',
-					'vendor/scripts/jquery-1.9.1.js',
 					'vendor/scripts/underscore-1.4.4.js',
 					'vendor/scripts/backbone-1.0.0.js',
-					'vendor/scripts/backbone-mediator.js',
-					'vendor/scripts/bootstrap/bootstrap-affix.js',
-					'vendor/scripts/bootstrap/bootstrap-alert.js',
-					'vendor/scripts/bootstrap/bootstrap-button.js',
-					'vendor/scripts/bootstrap/bootstrap-carousel.js',
-					'vendor/scripts/bootstrap/bootstrap-collapse.js',
-					'vendor/scripts/bootstrap/bootstrap-dropdown.js',
-					'vendor/scripts/bootstrap/bootstrap-modal.js',
-					'vendor/scripts/bootstrap/bootstrap-scrollspy.js',
-					'vendor/scripts/bootstrap/bootstrap-tab.js',
-					'vendor/scripts/bootstrap/bootstrap-tooltip.js',
-					'vendor/scripts/bootstrap/bootstrap-popover.js',
-					'vendor/scripts/bootstrap/bootstrap-transition.js',
-					'vendor/scripts/bootstrap/bootstrap-typeahead.js'
+					'vendor/scripts/backbone/backbone.subroute.js',
+					'vendor/scripts/backbone/backbone.stickit.js',
+					'vendor/scripts/backbone/backbone-mediator.js'
 				]
-				after:
-					'vendor/scripts/bootstrap/popover.js'
 		stylesheets:
 			defaultExtension: 'styl'
 			joinTo:
-				'stylesheets/app.css': /^app/
+				'stylesheets/app.css': /^app(\/|\\)(?!styles[\/\\]login\.styl)/
 				'stylesheets/vendor.css': /^vendor/
 				'stylesheets/login.css': /^app(\/||\\)styles(\/||\\)login\.styl$/
-			order:
-				before: ['vendor/styles/bootstrap/bootstrap.less']
-				after: ['vendor/styles/bootstrap/responsive.less']
 		templates:
 			defaultExtension: 'jade'
 			joinTo: 'javascripts/templates.js'
@@ -77,7 +141,10 @@ exports.config =
 				global_defs:
 					DEBUG: yes
 		jade:
-			pretty: yes # Adds pretty-indentation whitespaces to output (false by default)
+			# pretty: yes # Adds pretty-indentation whitespaces to output (false by default)
+			compileDebug: no
+			locals: {VERSION:"BUGAGAGA"}
+			# debug: yes
 		static_jade:                       # all optionals
 			extension:  ".static.jade"              # static-compile each file with this extension in `assets`
 			path:       [ /app/ ] # static-compile each file in this directories

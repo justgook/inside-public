@@ -1,19 +1,166 @@
-html, body
-    height: 100%;
-.fill 
-    min-height: 100%;
-.sidebar
-    top:0px;
-    left:0px;
-    bottom:0px;
-    position:absolute;
-    background-color:Aqua;
-.content
-    min-height:500px;
-    position:relative;
-    background-color:Gray;
-    float:right;
-.no-space [class*="span"]
-    margin-left: 0;
+// http://dribbble.com/shots/970912-User-Interface-Dark-Prototype?list=1423-HTML-CSS
+// http://dribbble.com/shots/351923-iPhone-Flash-Selector?list=searches&tag=ui
+// http://dribbble.com/shots/210793-UI-Dashboard?list=searches&tag=ui
+// http://dribbble.com/shots/1023229-Ultramarine-Admin?list=searches&tag=ui
+// http://dribbble.com/shots/318705-Stats-Dashboard-console-UI-UX?list=searches&tag=ui
+// http://dribbble.com/shots/301443-Admin-dashboard?list=searches&tag=ui
+// html, body
+//     height: 100%;
+// .fill
+//     min-height: 100%;
+// .sidebar
+//     top:0px;
+//     left:0px;
+//     bottom:0px;
+//     position:absolute;
+//     background-color:Aqua;
+// .content
+//     min-height:500px;
+//     position:relative;
+//     background-color:Gray;
+//     float:right;
+// .no-space [class*="span"]
+//     margin-left: 0;
+// http://www.niumowang.org/html-css/css3-loading/
+// http://www.google.com/fonts/specimen/Play --- font!!!
+@import "nib"
+@import "vendor/styles/_grid.styl"
+@import "vendor/styles/_iconic_fill.styl"
+iconic-fill("/fonts/iconicfill")
+
+body
+  margin:0
+  padding:0
+  &
+  & a
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+body > header
+  background-color:#FFF
+  height:2em
+  overflow: hidden
+body > section
+  column(9,3)
+  min-height: 40px
+  background:red
+body > aside
+  column(3, 0, first)
+  top:2em
+  left:0
+  bottom:0
+  position:absolute
+  background-color:Aqua
+  > menu
+    margin: 0
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+    > li
+      &:nth-child(1)
+        a
+          &:hover
+            iconic("chart_alt")
+          iconic("chart")
+      &:nth-child(2)
+        a
+          &:hover
+            iconic("user")
+            &:before
+              font-weight:bold
+          iconic("user")
+      &:nth-child(3)
+        a
+          &:hover
+            iconic("book_alt2")
+            &:before
+              font-weight:bold
+          iconic("book_alt2")
+      &:nth-child(5)
+        a
+          &:hover
+            iconic("cloud")
+            &:before
+              font-weight:bold
+          iconic("cloud")
+      list-style:none
+      width:100%
+      &, > a
+        color:#FAFAFA
+        text-shadow:1px 1px #201f1f
+        text-decoration:none
+      > a
+        position:relative
+        &:before
+        &:after
+          color:#282828
+          font-size:25px
+          font-weight:normal
+          text-shadow: 1px 1px #706f6f
+        &:before
+          float:left
+          width:30px
+          text-align:center
+        &:hover
+          iconic("chat")
+        iconic("chat_alt_fill")
+        &:after
+          content:'\e048'
+          font-family: 'IconicFill'
+          float:right
+          padding-right: 10px
+        display: block
+        font-size:12px
+        background: linear-gradient(top, #595757, #4c4c4c)
+        padding-left: 15px
+        height: 30px
+        box-sizing: border-box
+        border: none
+        border-top: 1px solid #797979
+        border-bottom: 1px solid #1a1a1a
+        line-height: 30px
+        font-weight: bold
+// @media screen and (max-width: 720px)
+//   body>section
+//   body>aside
+//     column(12)
+//     margin-bottom: 1em
 
 
+//////////
+// GRID //
+//////////
+
+// Specify the number of columns and set column and gutter widths
+// $columns: 12;
+// $column-width: 60;
+// $gutter-width: 20;
+
+// // Remove the definition below for a pixel-based layout
+// $total-width: 100%;
+
+
+// ////////////
+// // LAYOUT //
+// ////////////
+
+// // header
+// header#top {
+//   margin-bottom: 1em;
+// }
+
+// // main column & sidebar
+// #maincolumn {
+//   @include column(9);
+// }
+// #sidebar {
+//   @include column(3);
+// }
+
+// @media screen and (max-width: 720px) {
+//   #maincolumn,
+//   #sidebar {
+//     @include column(12);
+//     margin-bottom: 1em;
+//   }
+// }

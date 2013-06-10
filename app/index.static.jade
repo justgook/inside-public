@@ -26,25 +26,14 @@ html(lang="en")
     script(src="/javascripts/templates.js", defer)
     script(src="/javascripts/app.js", defer, onload="require('initialize');")
   body
-    div.container-fluid(style="padding: 0")
-      div.row-fluid.no-space
-        i(class="icon-microphone", style="height: 100px;width:100px;display:block")
-        div.sidebar.span3.hidden-phone
-          ul.nav.nav-list.nav-side
-            li: a(href="#overview")
-                i.icon-chevron-right
-                | Overview
-            li: a(href="#overview")
-                i.icon-chevron-right
-                | Transitions
-            li: a(href="#overview")
-                i.icon-chevron-right
-                | Tab
-            li: a(href="#overview")
-                i.icon-chevron-right
-                | Popover
-            li: a(href="#overview")
-                i.icon-chevron-right
-                | Button
-        div.span9.content(style="float:right")
-          //Body content
+    header
+      menu
+        li: a settings (cog)
+    section
+    aside
+      menu
+        li: a(href="#overview") Statistic
+        li: a(href="#overview") Users
+        li: a(href="#overview") Wiki
+        li: a(href="#overview") Messages
+        li: a(href="#overview") File cloud
