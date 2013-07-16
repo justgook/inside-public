@@ -3,10 +3,10 @@
 module.exports = class View extends Backbone.View
   initialize: ->
     @render = _.bind this.render, this
-  template: ()->
-  getRenderData:  ()->
+  template: ->
+  getRenderData:  ->
   render: ->
     @$el.html(this.template(this.getRenderData()))
     @afterRender()
     @
-  afterRender: ()->
+  afterRender: ->
