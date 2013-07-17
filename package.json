@@ -1,9 +1,9 @@
 {
-  "name": "clean-brunch",
-  "author": "Your Name",
-  "version": "0.0.1",
-  "homepage": "https://github.com/justgook/clean-brunch",
-  "description": "Clean Brunch skeleton for scalable Backbone application",
+  "name": "inside-public",
+  "author": "Roman Potashow",
+  "version": "0.0.1-SNAPSHOT",
+  "homepage": "https://github.com/justgook/inside-public",
+  "description": "CMS system for remote editing and analysing",
 
   "repository": {
     "type": "git",
@@ -11,17 +11,11 @@
   },
 
   "engines": {
-    "node": "~0.6.10 || 0.8 || 0.9 || 0.10"
+    "node": "0.10"
   },
 
   "scripts": {
-    "start": "brunch watch --server",
-
-    "add:bootstrap":  "./node_modules/.bin/cake add:bootstrap",
-    "add:stickit":    "./node_modules/.bin/cake add:stickit",
-
-    "rem:bootstrap":  "./node_modules/.bin/cake rem:bootstrap",
-    "rem:stickit":    "./node_modules/.bin/cake rem:stickit"
+    "start": "brunch watch --server"
   },
 
   "dependencies": {
@@ -30,7 +24,6 @@
     "sugar": "1.3.8",
     "brunch": "1.6.3",
     "wrench": "1.4.4",
-    "scaffolt": "0.2.0",
     "commander": "1.1.1",
     "coffee-script": "1.6.2",
 
@@ -40,7 +33,6 @@
 
     "css-brunch": ">= 1.0 < 1.7",
     "stylus-brunch": ">= 1.0 < 1.7",
-    "less-brunch": ">= 1.0 < 1.7",
 
     "jade-brunch": ">= 1.0 < 1.7",
     "static-jade-brunch": ">= 1.0 < 1.7",
