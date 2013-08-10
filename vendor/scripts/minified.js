@@ -1,8 +1,7 @@
 // minified.js config start -- use this comment to re-create configuration in the Builder
-// - Only sections add, addafter, addbefore, addfront, amdsupport,
-// - clone, collect, each, ee, fill, filter, find, get, getcookie, hasclass, off,
-// - on, parsejson, ready, remove, replace, request, set, setcookie, sub, text,
-// - tojson.
+// - Only sections add, addafter, addbefore, addfront, clone, collect,
+// - each, ee, fill, filter, find, get, getcookie, hasclass, off, on, parsejson,
+// - ready, remove, replace, request, set, setcookie, sub, text, tojson.
 /*
  * Minified-web.js - Complete library for JavaScript interaction in less than 4kb
  *
@@ -66,26 +65,9 @@
  */
 
 /*$
- * @id amdsupport
- * @name AMD support
- * @configurable default
- * @group OPTIONS
- * @doc no
- * @module WEB, UTIL
- * If enabled, Minified will work correctly with AMD frameworks. If not, it will just provide a global
- * function ##require(), which can be used only to load 'minified'.
- */
-if (/^u/.test(typeof define)) { // no AMD support available ? define a minimal version
-  var def = {};
-  this['define'] = function(name, f) {def[name] = f();};
-  this['require'] = function(name) { return def[name]; };
-}
-
-define('minified', function() {
-/*$
  * @stop
  */
-// @cond !amdsupport (function() {
+(function() {
 
   //// GLOBAL VARIABLES ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -2061,11 +2043,8 @@ define('minified', function() {
    @stop
    */
 
-    // @condblock amdsupport
-  return {
-  // @condend amdsupport
 
-  // @cond !amdsupport var MINI = {
+  var MINI = {
 
     /*$
      * @id dollar
@@ -2318,13 +2297,11 @@ define('minified', function() {
      */
     // @cond !ee dummy:null
   };
-  // @cond !amdsupport _window['require'] = function(n) { if (n == 'minified') return MINI; };
+  //_window['require'] = function(n) { if (n == 'minified') return MINI; };
+  window.$ = MINI.$;
 
-// @condblock amdsupport
-});
-// @condend amdsupport
 
-// @cond !amdsupport })();
+})();
 
 /*$
  * @id list

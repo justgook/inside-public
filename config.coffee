@@ -84,4 +84,10 @@ exports.config =
 			asset:      "public"             # specify the compilation output
 	modules:
 		addSourceUrls : no
+		# wrapper: (path, data) ->
+		# 	"""
+		# 		require.define({"#{path}": function(exports, require, module) {
+		# 			#{data}
+		# 		}});\n\n
+		# 	"""
 	notifications: no
