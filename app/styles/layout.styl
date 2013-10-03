@@ -23,103 +23,189 @@
 //     margin-left: 0;
 // http://www.niumowang.org/html-css/css3-loading/
 // http://www.google.com/fonts/specimen/Play --- font!!!
+
+//Font awsom fix
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('fontawesome-webfont.eot?v=3.2.1');
+  src: url('fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('fontawesome-webfont.woff?v=3.2.1') format('woff'), url('fontawesome-webfont.ttf?v=3.2.1') format('truetype'), url('fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 @import "nib"
-@import "vendor/styles/_grid.styl"
-@import "vendor/styles/_iconic_fill.styl"
-iconic-fill("/fonts/iconicfill")
+@import "_grid"
+column-width = 60
+gutter-width = 20
+columns = 12
+total-width = 100%
+
+*
+  -webkit-user-select: none;
+@import "_noise"
+html, body
+  font-size:100%
+  margin: 0px
+  padding: 0px
+  overflow: hidden
+  width:100%
+  height:100%
+  noise-background: #4d575a
+body
+  font-size: 13px //change to em
+h1
+  font-size: 14px
+
+section.panel
+  box-shadow:0px 1px 2px 0px #acaeaf;
+  border-radius: 3px;
+  column:12,9
+  background:#FFF
+  padding:10px
+  box-sizing: border-box
+  margin-top:5px
+  margin-bottom:5px
+  h1
+    position:relative
+    top:-10px
+    left:-10px
+    padding-left:10px
+    padding-right:10px
+    width:100%
+    margin:0
+    height: 38px
+    line-height: 38px
+    background: linear-gradient(top, #d2d2d2, #eaeaea);
+    border-bottom: 1px solid #e0e0e0
+    border-top: 1px solid rgba(255,255,255,.5)
+    &,& i
+      color:rgb(108, 108, 108)
+      text-shadow: 0px 1px 3px #fff;
+    i
+      padding: 0 10px 0 10px
 
 body
-  margin:0
-  padding:0
-  background:#34383d
-  &
-  & a
-    font-family: Geneva, Arial, Helvetica, sans-serif;
-body > header
-  height:2em
-  overflow: hidden
-body > section
-  column(9,3)
-  min-height: 40px
-  background:red
-body > aside
-  column(3, 0, first)
-  top:2em
-  left:0
-  bottom:0
+  position:relative
+  > footer
+    column: 12
+    text-align:center
+    position:absolute
+    bottom:0
+    left:0
+    line-height:25px
+    color:#f4f4f4
+    text-shadow: 0px -1px 1px #050505
+.background-frame
   position:absolute
-  background-color:Aqua
-  > menu
-    margin: 0
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
-    -webkit-margin-start: 0;
-    -webkit-margin-end: 0;
-    -webkit-padding-start: 0;
-    > li
-      &:nth-child(1)
-        a
-          &:hover
-            iconic("chart_alt")
-          iconic("chart")
-      &:nth-child(2)
-        a
-          &:hover
-            iconic("user")
-            &:before
-              font-weight:bold
-          iconic("user")
-      &:nth-child(3)
-        a
-          &:hover
-            iconic("book_alt2")
-            &:before
-              font-weight:bold
-          iconic("book_alt2")
-      &:nth-child(5)
-        a
-          &:hover
-            iconic("cloud")
-            &:before
-              font-weight:bold
-          iconic("cloud")
-      list-style:none
-      width:100%
-      &, > a
-        color:#FAFAFA
-        text-shadow:1px 1px #201f1f
-        text-decoration:none
-      > a
-        position:relative
-        &:before
-        &:after
-          color:#282828
-          font-size:25px
-          font-weight:normal
-          text-shadow: 1px 1px #706f6f
-        &:before
-          float:left
-          width:30px
-          text-align:center
-        &:hover
-          iconic("chat")
-        iconic("chat_alt_fill")
-        &:after
-          content:'\e048'
-          font-family: 'IconicFill'
-          float:right
-          padding-right: 10px
-        display: block
-        font-size:12px
-        background: linear-gradient(top, #595757, #4c4c4c)
-        padding-left: 15px
-        height: 30px
-        box-sizing: border-box
-        border: none
-        border-top: 1px solid #797979
-        border-bottom: 1px solid #1a1a1a
-        line-height: 30px
-        font-weight: bold
+  left: 0
+  top: 5px
+  bottom: 25px
+  right: 0
+  column:11
+  offset:1
+  background:#ebebeb
+  box-shadow:0px 1px 2px 0px #acaeaf
+  border-radius: 3px
+  &:after
+    content:""
+    position:absolute
+    top:0
+    left:0
+    right:0
+    bottom:0
+    column:2
+    padding-left:( correction * 12) %
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,.3)
+#modal
+  background: #00F
+  position:absolute
+  top:0
+  left: 0
+  right: 0
+  bottom: 0
+  display:none
+
+#main
+  column:9
+  offset:3
+  position:relative
+  padding-top:10px
+  padding-bottom:10px
+body
+  > aside
+    column: 3
+    top:0
+    bottom:0
+    left:0
+    position:absolute
+    > menu
+      padding:0
+      padding-left:(100 / 24 +1)%
+      column:4
+      overflow:visible
+
+      > li
+        list-style:none
+        text-align:center
+        margin:0
+        > a
+          text-decoration: none
+          display: block
+          color:#f4f4f4
+          text-shadow: 0px -1px 1px #050505
+          line-height:20px
+          padding:5px 0
+          &.active
+            color:#393939
+            text-shadow: 0px 1px 1px #e5e5ee
+            border-radius: 3px 0 0 3px
+            margin-top:10px
+            background:#ebebeb
+          &:first-child,&.active:first-child
+            margin-top:5px
+          > i[class^="icon-"]
+            display:block
+            font-size:38px
+        > a.active + ul
+              display:block
+        > ul
+          position:absolute
+          padding:0
+          margin:0
+          column:8
+          offset:4
+          display:none
+          top:5px
+          bottom:25px
+          left: (100/48)%
+          box-shadow: inset 50px 0px 20px -30px  #ebebeb
+          // box-shadow:9px -5px 17px 1px #00FF3A, inset 0px -10px 10px -10px black
+          border-radius:3px
+          background-image: -webkit-linear-gradient(-90deg,transparent 0%,transparent 50%, #f0f1f1 50%, #f0f1f1 100%), -webkit-linear-gradient(  0deg, white 0%, rgba(0,0,0,.1) 50%, #f0f1f1 50%, #f0f1f1 100%);
+          background-size:.25em .25em
+          background-position: left top
+          > li
+            column:12
+            &:last-child a
+              border-bottom:none
+            &:first-child a
+              border-top:none
+            > a
+              box-sizing:border-box
+              padding-left:10px
+              text-align: left
+              border-bottom:1px solid #dcdfe0
+              border-top:1px solid #fff
+              display:block
+              margin: 0 10px
+              line-height:40px
+              color:#818386
+              > i
+                padding-right:5px
+
+
+
+
+
 
 //TODO MOVE TO SEPARATED FILES
 /* Smartphones (portrait and landscape) ----------- */
@@ -138,9 +224,11 @@ body > aside
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
 /* Styles */
 }
+
+
 
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {

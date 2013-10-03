@@ -1,0 +1,49 @@
+{
+  "name": "inside-public",
+  "version": "SNAPSHOT",
+  "main": "public/vendor.js",
+  "dependencies": {
+    "console-polyfill": "~0.1.0",
+    "lodash": "~2.1.0",
+    "jquery": "~2.0.2",
+    "normalize-css": "~2.1.2",
+    "h5bp-helpers": "~0.1.0",
+    "backbone": "~1.0.0",
+    "backbone.subroute": "~0.4.0",
+    "backbone-forms": "~0.12.0",
+    "font-awesome": "~3.2.1"
+  },
+  "overrides": {
+    "backbone": {
+      "dependencies": {
+        "lodash": "*",
+        "jquery": "*"
+      },
+      "main": "backbone.js"
+    },
+    "backbone-forms": {
+      "dependencies": {
+        "backbone": "*"
+      },
+      "main": "distribution/backbone-forms.js"
+    },
+    "font-awesome": {
+      "main": [
+        "font",
+        "css/font-awesome.css"
+      ]
+    },
+    "backbone.subroute": {
+      "main": "backbone.subroute.js"
+    }
+  },
+  "authors": [
+    "Roman Potashow <justgook@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}

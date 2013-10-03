@@ -1,12 +1,12 @@
 
 # Base class for all views
 module.exports = class View extends Backbone.View
-  initialize: ->
-    @render = _.bind this.render, this
+  # initialize: ->
+  #   @render = _.bind this.render, this
   template: ->
-  getRenderData:  ->
+  getRenderData: ->
   render: ->
-    @$el.html(this.template(this.getRenderData()))
+    @$el.html @template @getRenderData()
     @afterRender()
     @
   afterRender: ->

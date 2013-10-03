@@ -1,39 +1,88 @@
 !!! 5
-//- <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-//- <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-//- <!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
-//- <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 html(lang="en")
   head
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-
+    meta( name="viewport", content="user-scalable=no, width=device-width")
+    meta(name="apple-mobile-web-app-capable",content="yes")
     title Clean Brunch Pancakes
-    link(rel="stylesheet", href="/stylesheets/vendor.css")
-    link(rel="stylesheet", href="/stylesheets/app.css")
+    link( rel="shortcut icon", href="favicon.ico")
+    link(rel="stylesheet", href="/vendor.css")
+    link(rel="stylesheet", href="/app.css")
     //-     Fav and touch icons
     //-     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     //-     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     //-     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     //-     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
-    //-     <link rel="shortcut icon" href="favicon.ico">
-
-
-    //if lt IE 9
-      script(src="http://html5shim.googlecode.com/svn/trunk/html5.js")
-    script(src="/javascripts/vendor.js", defer)
-    script(src="/javascripts/templates.js", defer)
-    script(src="/javascripts/app.js", defer, onload="require('initialize');")
-  body
-    header
-      menu
-        li: a settings (cog)
-    section
+    script(src="/vendor.js", defer)
+    script(src="/templates.js", defer)
+    script(src="/app.js", defer, onload="require('initialize');")
+  body(ontouchstart="", unselectable="on", onselectstart="return false")
+    div.background-frame
     aside
       menu
-        li: a(href="#overview") Statistic
-        li: a(href="#overview") Users
-        li: a(href="#overview") Wiki
-        li: a(href="#overview") Messages
-        li: a(href="#overview") File cloud
+        li
+          a.active
+            i.icon-dashboard
+            | Dashboard
+          ul
+            li
+              a
+                i.icon-user
+                | User Profiles
+            li
+              a
+                i.icon-cogs
+                | Admin Tools
+            li
+              a
+                i.icon-road
+                | Milestornes
+            li
+              a
+                i.icon-time
+                | Worklog
+        li
+          a
+            i.icon-book
+            | Wiki
+          ul
+            li
+              a Topic one
+            li
+              a Other topic
+            li
+              a and one topic more
+        li
+          a
+            i.icon-hdd
+            | Servers
+        li
+          a
+            i.icon-beaker
+            | Resources
+        li
+          a
+            i.icon-bar-chart
+            | Logs
+    div#main
+      section.panel
+        h1
+          i.icon-group
+          | gaga
+        | http://themeforest.net/item/dream-works-responsive-admin-template/1988987?ref=pankmedia&ref=pankmedia&clickthrough_id=155216674&redirect_back=true
+      section.panel
+        h1
+          i.icon-group
+          | Performance / loading screen
+        | http://developer.nokia.com/Blogs/Code/2012/12/10/measuring-the-speed-of-resource-loading-with-javascript-and-html5/
+      section.panel
+        h1
+          i.icon-group
+          | 31 CSS Code Snippets To Make You A Better Coder
+        | http://www.designyourway.net/blog/resources/31-css-code-snippets-to-make-you-a-better-coder/
+    footer
+      != 'Copyright &copy; ' + NAME + 'v: ' + VERSION
+
+    div#modal
+    div#notafication

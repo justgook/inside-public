@@ -1,4 +1,8 @@
-module.exports = class WikiRouter extends Backbone.SubRoute
+Module = require("/lib/module")
+module.exports = class WikiRouter extends Module
+  menu:
+    icon: "icon-book"
+    text: "wiki"
   routes:
     ""           : "wikiList"
     "create"     : "wikiCreate"
