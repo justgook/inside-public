@@ -1,0 +1,12 @@
+each item in data
+  li(id='menu_'+item.cid)
+    a(href='/'+item.prefix, class = item.selected ? "active":"")
+      i(class=item.menu.icon)
+      =item.menu.text
+    if item.selected
+      ul
+        each subitem in item.menu.subMenu
+          li
+            a
+              i(class=subitem.icon)
+              =subitem.text

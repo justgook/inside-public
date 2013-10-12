@@ -1,3 +1,10 @@
+###Routes
+ * http://codepen.io/somethingkindawierd/pen/mxIzj
+ * https://github.com/whyohwhyamihere/backbone.marionette.subrouter
+ * http://www.geekdave.com/2012/04/05/module-specific-subroutes-in-backbone/
+###Project manager
+http://www.comindwork.com/
+http://www.liquidplanner.com/
 dhtmlxGrid
 dhtmlxTreeGrid
 dhtmlxTree
@@ -22,7 +29,7 @@ dhtmlxDataStore
 dhtmlxDataProcessor
 http://dhtmlx.com/docs/products/editions.shtml
 
-https://github.com/whyohwhyamihere/backbone.marionette.subrouter
+
 
 
 Grid example http://direct-fuel-injection.github.io/bbGrid/

@@ -8,7 +8,8 @@
     "jquery": "~2.0.2",
     "normalize-css": "~2.1.2",
     "h5bp-helpers": "~0.1.0",
-    "backbone": "~1.0.0",
+    "backbone": "~1.1.0",
+    "backbone.marionette": "v1.1.0",
     "backbone.subroute": "~0.4.0",
     "backbone-forms": "~0.12.0",
     "font-awesome": "~3.2.1"
@@ -20,6 +21,12 @@
         "jquery": "*"
       },
       "main": "backbone.js"
+    },
+    "backbone.marionette":{
+      "dependencies": {
+        "lodash": "*",
+        "backbone": "*"
+      }
     },
     "backbone-forms": {
       "dependencies": {
