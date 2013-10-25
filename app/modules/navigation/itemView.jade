@@ -1,3 +1,11 @@
-a
-  i(class=menu.icon)
-  =menu.text
+a(href=channel ? ('/' + channel) : null, class = active ? 'active' : null)
+  i(class=icon)
+  =text
+  - console.log(subMenu)
+if subMenu
+  ul
+    each item in subMenu
+      li
+        a
+          i(class=item.icon)
+          =item.text

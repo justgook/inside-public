@@ -1,3 +1,14 @@
+#TESTS
+https://speakerdeck.com/theycallmeswift/integration
+https://github.com/olivoil/NodeBDD/tree/master/test/features
+https://github.com/cucumber/cucumber/tree/master/examples/i18n
+http://zombie.labnotes.org/
+https://github.com/cucumber/cucumber-js
+
+
+#Load tests
+http://loader.io/pricing
+
 ###Routes
  * http://codepen.io/somethingkindawierd/pen/mxIzj
  * https://github.com/whyohwhyamihere/backbone.marionette.subrouter

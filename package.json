@@ -13,11 +13,13 @@
   "scripts": {
     "start": "brunch watch --server",
     "test": "karma start test/karma.conf.coffee",
+    "beck-end-test":"",
     "postinstall" : "bower install",
     "update" : "bower update"
   },
   "dependencies": {
     "brunch":"1.7.4",
+    "connect": "2.10.1",
     "bower": "1.2.6",
     "javascript-brunch": ">= 1.0 < 1.8",
     "css-brunch": ">= 1.0 < 1.8",
@@ -39,5 +41,10 @@
     "karma-phantomjs-launcher": "~0.1",
     "karma-coffee-preprocessor": "~0.1",
     "karma-spec-reporter": ">=0.0.4"
+  },
+  "devDependencies":{
+    "cucumber": "0.3.1",
+    "zombie": "~2.0"
   }
+
 }

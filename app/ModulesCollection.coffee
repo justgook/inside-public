@@ -16,7 +16,7 @@ class ModulesCollection extends Backbone.Collection
     module.set selected: true
     @active = module
   constructor: (models, option)->
-    super(models, option)
+    super
     document.body.addEventListener "click", (e) ->
       node = e.target if e.target.tagName is "A"
       node = e.target.parentNode if e.target.parentNode.tagName is "A"

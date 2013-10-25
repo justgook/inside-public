@@ -49,5 +49,9 @@ module.exports = (config) ->
             'karma-chai-plugins',
             'karma-coffee-preprocessor',
             'karma-phantomjs-launcher',
+            # 'karma-slimerjs-launcher', # custom browser based on Gecko
             'karma-spec-reporter'
+            # inelined plugins
+            # {'framework:xyz', ['factory', factoryFn]},
+            # require('./plugin-required-from-config')
         ]
