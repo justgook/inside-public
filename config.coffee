@@ -4,7 +4,11 @@ exports.config =
     paths:
         public: 'public'
     conventions:
-        assets: /(^bower_components(\/|\\)font-awesome(\/|\\)font)|assets(\/|\\)/ # vendor/jquery/files/jq.img
+        # assets: /(^bower_components(\/|\\)font-awesome(\/|\\)font)|assets(\/|\\)/
+        assets: (path) ->
+            return true if /assets(\/|\\)/.test path
+            return false if /^bower_components(\/|\\)font-awesome(\/|\\)css/.test path
+            return true if /^bower_components(\/|\\)font-awesome(\/|\\)/.test path
     files:
         javascripts:
             joinTo:
