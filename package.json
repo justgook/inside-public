@@ -12,8 +12,7 @@
   "private": true,
   "scripts": {
     "start": "brunch watch --server",
-    "test": "karma start test/karma.conf.coffee",
-    "beck-end-test": "",
+    "test": "cucumber.js integration/",
     "postinstall": "bower install",
     "update": "bower update"
   },
