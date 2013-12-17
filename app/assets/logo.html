@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ParticleSlider</title>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5/dat.gui.min.js"></script>
+    <style type="text/css">
+@hintImg: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGkAAAAgCAMAAAAmC6asAAAAMFBMVEX19vf19vft7u/19vfp6uv19vfx8vP19vf19vf19vf19vfm5+j19vcAAAD19vfl5udu+MchAAAADnRSTlOIVcIz10StZneZEewiAMEzGswAAAF/SURBVHja7ZXZbsQwCEXjneXa/P/fFntm0uRpVGkaqVX8YAW4cMCxkq1ftW7STbpJP1sJb0lFPkJiekuq4TMkfkti+gxpe0uivRmB9LQOlHraNixnYErPONAfcYZntYfv9aDtJTmUO5OCeukGR5paqZtbGaSVzYWIlZ9DI6vVpC6shJw5TzdlZk47qZpldAkteBVToxNJrLGqoil6MPE9A1bSNorUXPYWvbLUjbg37lwRNPYW6x6eJK4ilB2hVmChJw2nWx4He3Map1exMVFvQyMVN78rlexbY7Gk0tWUm7gsHUnikQ6dwzLRLM/tRKIlGMMFoijmpthqBocLFTLWO41GnhrFXZIGTiTz5pIyA9G4uqSeSV3W4bSsqvycg0x9RTpcKHaHHybNOZBXfPa41jNjLCeqjRopzgI4kXYcsDqVZWJaZwVWHpYBTOuoACCvEpjTC3DFd6/oVV9YmPw+CWsb+H1SxVWkkgkoV5B6ijasXnMjBPIf/u436e+TvgDCaqPX6lO5yQAAAABJRU5ErkJggg==');
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000;
+  background-position: center top;
+
+  .slides, & > .dg {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    background-image: @hintImg;
+    background-repeat: no-repeat;
+
+    & > .dg {
+      display: block;
+    }
+  }
+}
+
+    </style>
+  </head>
+  <body id="particle-slider">
+      <div class="slides">
+        <div id="first-slide" class="slide" data-src="data:image/gif;base64,R0lGODlhrwCvAIABAPX29////yH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4zLWMwMTEgNjYuMTQ1NjYxLCAyMDEyLzAyLzA2LTE0OjU2OjI3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyRDM3ODJFRDdFOEMxMUUyQTFFMUE1MjhGRjg5OTMyRSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoyRDM3ODJFRTdFOEMxMUUyQTFFMUE1MjhGRjg5OTMyRSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjJEMzc4MkVCN0U4QzExRTJBMUUxQTUyOEZGODk5MzJFIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjJEMzc4MkVDN0U4QzExRTJBMUUxQTUyOEZGODk5MzJFIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAQAAAQAsAAAAAK8ArwAAAv+Mj6nL7b+AnLRaiLPevPufWOJYgeaJpipCtu4KxzLs1u2M53pj9+QODNJ8RJHwiOQUl6Wk86lgSifQanKKlVi3u6yXC5Z5v+HyaTw2qzvo9PqNabvh9Kh8Xs/f0Xn9nt8H99cW+DZIWGh2iJjItSjX6PjIGPk0CVlpeVmTSbdp1Nn3SRFaOApQmviZ2rjJ2jr5CrsoG0lbO/uHm3u3y4upwuS7MbiCN8yge1aMHLJnstqs7HGqNfxMXU2Ki62kDcray/Z9kypOTP4Sep6R7tMJ3O7+bksJMS9sav+AL6V/zK+fPz8AHQjEQpBMnIMIBQFayLDhmof3IipUVDCCxYz/VSga3OhxC0dnIENCMamx5EgkKw+ojNfxIo+XMJ20NECz5hWZyXLqPMIzpc99Qm4OZccyKMmjRIEoXcr0ZoyWUbsVzQKxKsocT11qRdoFa8CvTWd0xUkWLI6zAdKqNSv2o9utUyXOnFt2yJSKeOkGi3u3L1sUZwX/NAZYqOHEYhhDXbxXh+PHkPNxtau4cuS1mO1onvx3c8/PnfUODEzaMlzRmVMTkVyahevTq2m3nm0DNmvPuF9f3k25tzrOtm8L/xE6b9vj9DSMGsuck1xt0KOXQ32quvUR2p9P3879e3bx4Jtg936+PBXy0dKrR8XeVXz13du7B8/3W/3y++0b/8c/n3z3bdefgAMyl58/oHn1njUBSrcgWg3C96A6bE2YYD4XNpjhEhICF1x0HRbBIIiy8VdgbiUWxxuBKUr3IYstIjiibzHKeKJ1Ndp4o4c7ppZVcVTp+CKMK+KYY29BsjiYiD+qOKNqBy62pJRHWjmaa/KAZhRuVfqYpYkhGrZlbD1i+R9eZZp5JolfCrYmkm26+SRZcco5J48VVnUnmlH6+aedfYJZJJR1DuWcX0myOeZRiUqVp56FloQOpJE292ZOlQ7WKJ2ZqrQpp51KuidDoUZYqqGfHuSNoqmqeqg7rbr6qpGDzjOOcqt6+iirudI6aQ/Z4DOsrr0CO+otv7AiGyuptx4CwjTJGTsls8nyOq21gYpaLbbZahsmnsdSW+xbHwC67GHfgqsGtE65m4my7zJTD71BxPIPvFc9kpC+QF1iCMAnGSgSwTahd7B/A493bzVlkPObwxjhei6xE03obRgYYxrwxtf167GD+YYcb8gUVkKyORzK8p4vLl5DYzPLzSbztmrWnGZaONdK087PaurzrI4GXbFPRKcA6tF1CaR0WBA3nZTAUBdMbh0FAAA7">
+        </div>
+      </div>
+      <canvas class="draw"></canvas>
+      <script type="text/javascript">
+// Tamino Martinius - All rights reserved
+
+// Copyright © 2013 Tamino Martinius (http://zaku.eu)
+// Copyright © 2013 Particleslider.com (http://particleslider.com
+
+// Terms of usage: http://particleslider.com/legal/license
+
+var init = function(){
+  var isMobile = navigator.userAgent &&
+    navigator.userAgent.toLowerCase().indexOf('mobile') >= 0;
+  var isSmall = window.innerWidth < 600;
+
+  var ps = new ParticleSlider({
+    ptlGap: isMobile || isSmall ? 3 : 0,
+    ptlSize: isMobile || isSmall ? 3 : 1,
+    width: 1e9,
+    height: 1e9
+  });
+
+  var gui = new dat.GUI();
+  gui.add(ps, 'ptlGap').min(0).max(5).step(1).onChange(function(){
+    ps.init(true);
+  });
+  gui.add(ps, 'ptlSize').min(1).max(5).step(1).onChange(function(){
+    ps.init(true);
+  });
+  gui.add(ps, 'restless');
+  gui.addColor(ps, 'color').onChange(function(value){
+    ps.monochrome = true;
+    ps.setColor(value);
+    ps.init(true);
+  });
+
+
+  (window.addEventListener
+   ? window.addEventListener('click', function(){ps.init(true)}, false)
+   : window.onclick = function(){ps.init(true)});
+}
+
+var initParticleSlider = function(){
+  var psScript = document.createElement('script');
+  (psScript.addEventListener
+    ? psScript.addEventListener('load', init, false)
+    : psScript.onload = init);
+  psScript.src = 'http://particleslider.com/js/particleslider/current/particleslider.js';
+  psScript.setAttribute('type', 'text/javascript');
+  document.body.appendChild(psScript);
+}
+
+(window.addEventListener
+  ? window.addEventListener('load', initParticleSlider, false)
+  : window.onload = initParticleSlider);
+
+
+      </script>
+  </body>
+</html>

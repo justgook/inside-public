@@ -13,38 +13,31 @@
   "scripts": {
     "start": "brunch watch --server",
     "test": "karma start test/karma.conf.coffee",
-    "beck-end-test":"",
-    "postinstall" : "bower install",
-    "update" : "bower update"
+    "beck-end-test": "",
+    "postinstall": "bower install",
+    "update": "bower update"
   },
   "dependencies": {
-    "brunch":">= 1.0 < 1.8",
-    "connect": "2.10.1",
-    "bower": "1.2.6",
+    "brunch": ">= 1.0 < 1.8",
+    "connect": "2.12.0",
+    "bower": "1.2.8",
     "javascript-brunch": ">= 1.0 < 1.8",
     "css-brunch": ">= 1.0 < 1.8",
     "uglify-js-brunch": ">= 1.0 < 1.8",
     "clean-css-brunch": ">= 1.0 < 1.8",
-
     "coffee-script-brunch": ">= 1.0 < 1.8",
-
     "stylus-brunch": ">= 1.0 < 1.8",
-
-    "jade-brunch": ">= 1.0 < 1.7",
+    "jade-brunch": ">= 1.0 < 1.8",
     "static-jade-brunch": ">= 1.0 < 1.8",
-
-    "auto-reload-brunch": ">= 1.0 < 1.8",
-
-    "karma": "~0.10",
-    "karma-mocha": "~0.1",
-    "karma-chai-plugins": "~0.1",
-    "karma-phantomjs-launcher": "~0.1",
-    "karma-coffee-preprocessor": "~0.1",
-    "karma-spec-reporter": ">=0.0.4"
+    "auto-reload-brunch": ">= 1.0 < 1.8"
   },
-  "devDependencies":{
+  "devDependencies": {
     "cucumber": "0.3.1",
-    "zombie": "~2.0"
+    "zombie": "~2.0",
+    "ws": "~0.4.31",
+    "nedb": "~0.8.12",
+    "q": "~0.9.7",
+    "winston": "~0.7.2",
+    "engine.io": "~0.7.12"
   }
-
 }

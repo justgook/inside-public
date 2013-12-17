@@ -1,6 +1,0 @@
-for item, key in items
-  li.big(tabindex="1",style="left:#{Math.round(Math.cos((360/items.length*key - start)*Math.PI/180)*250)+250}px;top:#{Math.round(Math.sin((360/items.length*key - start) * Math.PI/180)*250)+250}px")
-    span #{item.title}
-    ul
-      for value, key2 in item.values
-        li(style="left:#{Math.round(Math.cos((360/item.values.length*key2 + 360/items.length*key - start)*Math.PI/180)*(50+item.values.length*8))+48}px;top:#{Math.round(Math.sin((360/item.values.length*key2 + 360/items.length*key - start) * Math.PI/180)*(50+item.values.length*8))+48}px") #{value}

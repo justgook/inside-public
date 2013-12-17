@@ -21,6 +21,9 @@ Thumbs.db
 .idea
 *.iml
 
+#NPM log file
+npm-debug.log
+
 # NPM packages folder.
 node_modules/
 
